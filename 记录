@@ -11,3 +11,11 @@ list_num=[1,2,1,2,3,1,1,1,4]
 while(1 in list_num):
     list_num.remove(1)
 print(list_num)
+
+#判断一个列表是否包含了另一个列表，只判断元素是否出现，次数不管
+a=[2,3,4,5,7,8,1,1]
+b=[1,2,3]
+c=list(set(a))
+print(set(b).issubset(a))
+print([item for item in b if item in a]==b)
+print(c)
