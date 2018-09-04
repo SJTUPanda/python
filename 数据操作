@@ -1,4 +1,7 @@
 round(ans,2)#保留两位小数
 
 import math
-log(num,2)#以2为底的对数
+log(num,2) #以2为底的对数
+
+m,n=4,3
+matrix=[[0]*n for i in range(m)] #二维列表初始化
