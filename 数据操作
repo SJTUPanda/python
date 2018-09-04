@@ -1,0 +1,4 @@
+round(ans,2)#保留两位小数
+
+import math
+log(num,2)#以2为底的对数
