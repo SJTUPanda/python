@@ -1,0 +1,13 @@
+#分割字符串，拼接字符
+a="boy. a am i"
+b=a.split(" ")
+b=list(reversed(b)) #注意这里的list
+print(b)
+c=" ".join(b)
+print(c)
+
+#删除列表中所有指定元素
+list_num=[1,2,1,2,3,1,1,1,4]
+while(1 in list_num):
+    list_num.remove(1)
+print(list_num)
