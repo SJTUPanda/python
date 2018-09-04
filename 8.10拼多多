@@ -43,4 +43,30 @@ while(1):
     else:
         a=mod*10
 
-
+#之前一场的pdd
+#输入一串整数，首先需要将其分成两个部分，每个部分可以加一个小数点也可以不加，
+#1.0和010这样的不符合规则，求一共有多少种结果？
+def is_all_zero(s):
+    for i in s:
+        if i!=0:
+            return 0
+    return 1
+def number_of_sub_s(s):
+    if is_all_zero(s):
+        return 0
+    if s[0]==0 and s[-1]==0:
+        return 1
+    if s[0]==0 or s[-1]==0:
+        return 1
+    return len(s)
+if __name__=='__main__':
+    raw_s=input()
+    list_s=list(map(int,raw_s))
+    if len(list_s)==1:
+        print(1)
+    ans=0
+    for i in range(len(list_s)):
+        s1=list_s[:i]
+        s2=list_s[i:]
+        ans=ans+number_of_sub_s(s1)*number_of_sub_s(s2)
+    print(ans)
