@@ -6,6 +6,14 @@ print(b)
 c=" ".join(b)
 print(c)
 
+#字符串大小写转换
+new_str=str.upper()
+new_str=str.lower()
+new_str=str.capitalize() #句子首字母大写
+new_str=str.title() #每个单词首字母大写
+
+
+
 #删除列表中所有指定元素
 list_num=[1,2,1,2,3,1,1,1,4]
 while(1 in list_num):
