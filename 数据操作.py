@@ -29,3 +29,9 @@ l_1=input().split()
 l_2=set(l_1)
 l_3=[l_1.count(item) for item in l_2]
 
+class TreeNode:#树中节点的定义
+     def __init__(self, x):
+         self.val = x
+         self.left = None
+         self.right = None
+a=TreeNode(1)
