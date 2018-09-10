@@ -6,8 +6,18 @@ log(num,2) #以2为底的对数
 import sys
 for s in sys.stdin: #输入不确定长度时使用
 
-m,n=4,3
-matrix=[[0]*n for i in range(m)] #二维列表初始化
+m ,n = 4,3
+matrix = [[0]*n for i in range(m)] #二维列表初始化
+
+l = list(map(lambda x:x**2,number))
+
+
+b = [1,2,3,4,5]
+b.reverse()#反序
+b_1 = list(reversed(b))
+
+b.sort()#元素从小到大排序
+new_b = sorted(b)#元素从小到大排序
 
 #获得矩阵输入，首先获得数据维数(逗号隔开)，再获得矩阵
 str_in=input().split(",")
