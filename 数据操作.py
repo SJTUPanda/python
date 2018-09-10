@@ -45,3 +45,8 @@ class TreeNode:#树中节点的定义
          self.left = None
          self.right = None
 a=TreeNode(1)
+
+class ListNode:#链表
+    def __init__(self, x):
+        self.val = x
+        self.next = None
